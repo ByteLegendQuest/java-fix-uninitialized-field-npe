@@ -9,9 +9,7 @@ public class CatTest {
     @Test
     @CaptureSystemOutput
     public void test(CaptureSystemOutput.OutputCapture capture) {
-        capture.expect(Matchers.containsStringIgnoringCase("abcdef"));
-        Cat cat = new Cat();
-        cat.name = "ABCDEF";
-        cat.sayName();
+        capture.expect(Matchers.containsStringIgnoringCase("My name is abcdef"));
+        Cat.createNewCat("ABCDEF").sayName();
     }
 }
