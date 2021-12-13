@@ -8,6 +8,10 @@ public class Cat {
         tom.sayName();
     }
 
+    public Cat(String name) {
+        this.name = name;
+    }
+
     public static Cat createNewCat(String name) {
         return new Cat(name);
     }
