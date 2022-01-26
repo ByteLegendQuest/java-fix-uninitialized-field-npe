@@ -1,16 +1,14 @@
 package com.bytelegend;
 
 public class Cat {
-    public static String name;
+    public String name;
 
     public static void main(String[] args) {
         Cat tom = createNewCat("Tom");
         tom.sayName();
-		
     }
 
-    public static Cat createNewCat(String n) {
-        name=n;
+    public static Cat createNewCat(String name) {
         return new Cat();
     }
 
