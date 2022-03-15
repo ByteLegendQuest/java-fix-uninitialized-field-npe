@@ -14,6 +14,6 @@ public class Cat {
 
     // Print my `name` to standard output
     public void sayName() {
-        System.out.println("My name is " + name + ", my name's length is " + name.length());
+        System.out.println("My name is " + name);
     }
 }
