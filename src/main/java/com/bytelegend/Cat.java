@@ -5,12 +5,13 @@ public class Cat {
 
     public static void main(String[] args) {
         Cat tom = createNewCat("Tom");
-        tom.name = "Tom";
         tom.sayName();
     }
 
     public static Cat createNewCat(String name) {
-        return new Cat();
+        Cat cat = new Cat();
+        cat.name = name;
+        return cat;
     }
 
     // Print my `name` to standard output
