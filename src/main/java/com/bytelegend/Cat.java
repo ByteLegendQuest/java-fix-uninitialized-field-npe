@@ -5,6 +5,7 @@ public class Cat {
 
     public static void main(String[] args) {
         Cat tom = createNewCat("Tom");
+        tom.name = "Tom";
         tom.sayName();
     }
 
