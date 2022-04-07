@@ -7,6 +7,10 @@ public class Cat {
         Cat tom = createNewCat("Tom");
         tom.sayName();
     }
+    
+    public Cat() {
+        this.name = "";
+    }
 
     public static Cat createNewCat(String name) {
         return new Cat();
