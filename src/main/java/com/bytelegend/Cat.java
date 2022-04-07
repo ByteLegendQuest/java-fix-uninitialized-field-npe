@@ -8,16 +8,14 @@ public class Cat {
         tom.sayName();
     }
     
-    public Cat() {
-        this.name = "";
-    }
-
     public static Cat createNewCat(String name) {
         return new Cat();
     }
 
     // Print my `name` to standard output
     public void sayName() {
-        System.out.println("My name is " + name + ", my name's length is " + name.length());
+        int nameLength = (name == null) ? 0 : name.length();
+        String nullName = (name == null) ? "" : name;
+        System.out.println("My name is " + nullName + ", my name's length is " + nameLength());
     }
 }
