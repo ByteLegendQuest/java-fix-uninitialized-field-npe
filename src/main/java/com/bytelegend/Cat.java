@@ -7,15 +7,17 @@ public class Cat {
         Cat tom = createNewCat("Tom");
         tom.sayName();
     }
-    
+
+    public Cat(String name) {
+        this.name = name;
+    }
+
     public static Cat createNewCat(String name) {
-        return new Cat();
+        return new Cat(name);
     }
 
     // Print my `name` to standard output
     public void sayName() {
-        int nameLength = (name == null) ? 0 : name.length();
-        String nullName = (name == null) ? "" : name;
-        System.out.println("My name is " + nullName + ", my name's length is " + nameLength());
+        System.out.println("My name is " + this.name + ", my name's length is " + name.length());
     }
 }
