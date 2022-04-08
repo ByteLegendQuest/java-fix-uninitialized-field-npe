@@ -3,19 +3,13 @@ package com.bytelegend;
 public class Cat {
     public String name;
 
-    Cat(){}
-
-    Cat(String name){
-        this.name = name;
-    }
-
     public static void main(String[] args) {
         Cat tom = createNewCat("Tom");
         tom.sayName();
     }
 
     public static Cat createNewCat(String name) {
-        return new Cat(name);
+        return new Cat();
     }
 
     // Print my `name` to standard output
