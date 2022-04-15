@@ -9,15 +9,7 @@ public class Cat {
     }
 
     public static Cat createNewCat(String name) {
-        return new Cat(name);
-    }
-
-    public Cat(String name) {
-        this.name = name;
-    }
-
-    public Cat() {
-        this("");
+        return new Cat();
     }
 
     // Print my `name` to standard output
