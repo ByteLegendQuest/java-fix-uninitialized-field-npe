@@ -9,7 +9,11 @@ public class Cat {
     }
 
     public static Cat createNewCat(String name) {
-        return new Cat();
+        return new Cat(name);
+    }
+
+    public Cat(Sring name) {
+        this.name = name;
     }
 
     // Print my `name` to standard output
