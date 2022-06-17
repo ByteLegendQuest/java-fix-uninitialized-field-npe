@@ -8,7 +8,7 @@ public class Cat {
         tom.sayName();
     }
 
-    public static Cat createNewCat(String name) {
+    public Cat createNewCat(String name) {
         this.name = name;
         return new Cat();
     }
