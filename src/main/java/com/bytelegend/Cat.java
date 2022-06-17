@@ -14,7 +14,7 @@ public class Cat {
 
     // Print my `name` to standard output
     public void sayName() {
-        if (!name.isNull()) {
+        if (name != null) {
             System.out.println("My name is " + name + ", my name's length is " + name.length());
         } else {
             System.out.println("My name is , my name's length is 0");
