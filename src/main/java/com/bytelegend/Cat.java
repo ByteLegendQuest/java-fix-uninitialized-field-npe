@@ -9,9 +9,12 @@ public class Cat {
     }
 
     public static Cat createNewCat(String name) {
-        return new Cat();
+        return new Cat(name);
     }
 
+    public Cat(String name){
+        this.name = name;
+    }
     // Print my `name` to standard output
     public void sayName() {
         System.out.println("My name is " + name + ", my name's length is " + name.length());
