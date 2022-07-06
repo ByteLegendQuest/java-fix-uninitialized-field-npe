@@ -9,9 +9,7 @@ public class Cat {
     }
 
     public static Cat createNewCat(String name) {
-        Cat c = new Cat();
-        c.name = name;
-        return c;
+        return new Cat();
     }
 
     // Print my `name` to standard output
