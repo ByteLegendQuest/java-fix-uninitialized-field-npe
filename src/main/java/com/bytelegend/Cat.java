@@ -6,7 +6,7 @@ public class Cat {
         this.name = name;
     }
     public Cat() {
-        this("Michael")
+        this("Michael");
     }
 
     public static void main(String[] args) {
