@@ -6,6 +6,9 @@ public class Cat {
     public static void main(String[] args) {
         Cat tom = createNewCat("Tom");
         tom.sayName();
+
+
+        
     }
 
     public static Cat createNewCat(String name) {
