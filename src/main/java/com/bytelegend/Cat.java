@@ -7,11 +7,9 @@ public class Cat {
         Cat tom = createNewCat("Tom");
         tom.sayName();
     }
-    public Cat(String name){
-        this.name = name;
-    }
+
     public static Cat createNewCat(String name) {
-        return new Cat(name);
+        return new Cat();
     }
 
     // Print my `name` to standard output
