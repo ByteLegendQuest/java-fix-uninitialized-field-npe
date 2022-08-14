@@ -1,7 +1,7 @@
 package com.bytelegend;
 
 public class Cat {
-    public static String name;
+    public String name;
 
     public static void main(String[] args) {
         Cat tom = createNewCat("Tom");
@@ -9,7 +9,6 @@ public class Cat {
     }
 
     public static Cat createNewCat(String name) {
-        Cat.name = name;
         return new Cat();
     }
 
