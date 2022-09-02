@@ -8,10 +8,8 @@ public class Cat {
         tom.sayName();
     }
 
-    public static Cat createNewCat(String n) {
-        Cat cat = new Cat();
-        cat.name = n;
-        return cat;
+    public static Cat createNewCat(String name) {
+        return new Cat();
     }
 
     // Print my `name` to standard output
