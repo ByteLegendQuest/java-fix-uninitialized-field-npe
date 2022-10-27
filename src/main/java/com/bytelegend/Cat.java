@@ -2,10 +2,6 @@ package com.bytelegend;
 
 public class Cat {
     public String name;
-    
-    public Cat(String s) {
-        name = s;
-    }
 
     public static void main(String[] args) {
         Cat tom = createNewCat("Tom");
@@ -13,7 +9,7 @@ public class Cat {
     }
 
     public static Cat createNewCat(String name) {
-        return new Cat(name);
+        return new Cat();
     }
 
     // Print my `name` to standard output
