@@ -13,14 +13,12 @@ public class Cat {
     }
 
     public static Cat createNewCat(String name) {
-        Cat cat = new CatCat(name);
+        Cat cat = new Cat(name);
         return cat;
     }
 
     // Print my `name` to standard output
     public void sayName() {
-        name = Cat.name;
-
         System.out.println("My name is " + name + ", my name's length is " + name.length());
     }
 }
