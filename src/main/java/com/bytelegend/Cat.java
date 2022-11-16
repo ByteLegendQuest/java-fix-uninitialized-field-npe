@@ -4,7 +4,7 @@ public class Cat {
     public String name;
 
     public Cat(String name) {
-        name = name;
+        this.name = name;
     }
 
     public static void main(String[] args) {
