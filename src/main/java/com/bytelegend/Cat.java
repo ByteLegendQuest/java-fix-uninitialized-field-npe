@@ -9,13 +9,11 @@ public class Cat {
     }
 
     public static Cat createNewCat(String name) {
-        Cat c = new Cat();
-        c.name = name;
-        return c;
+        return new Cat();
     }
 
     // Print my `name` to standard output
     public void sayName() {
-        System.out.println("My name is " + this.name + ", my name's length is " + this.name.length());
+        System.out.println("My name is " + name + ", my name's length is " + name.length());
     }
 }
