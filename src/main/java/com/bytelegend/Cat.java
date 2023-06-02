@@ -3,7 +3,7 @@ package com.bytelegend;
 public class Cat {
     public String name;
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws NullPointerException {
         Cat tom = createNewCat("Tom");
         tom.sayName();
     }
