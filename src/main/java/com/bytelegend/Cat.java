@@ -8,16 +8,12 @@ public class Cat {
         tom.sayName();
     }
 
-    public Cat(String name) {
-        this.name = name;
-    }
-
     public static Cat createNewCat(String name) {
-        return new Cat(name);
+        return new Cat();
     }
 
     // Print my `name` to standard output
     public void sayName() {
-        System.out.println("My name is " + this.name + ", my name's length is " + this.name.length());
+        System.out.println("My name is " + name + ", my name's length is " + name.length());
     }
 }
